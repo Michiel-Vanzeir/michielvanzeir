@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Michiel Vanzeir</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <!-- Load Fontawesome icons-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Load the logo brand font-->
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet" />
+
+    <!-- Load the Boostrap 5.3 & custom CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header class="wrapper">
+        <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#AboutMe">Michiel Vanzeir</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="#AboutMe">About me</a>
+                        <a class="nav-link" href="#Portfolio">Portfolio</a>
+                        <a class="nav-link" id="contact-btn" href="#Contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <div>
+                <h6>Hi there!</h6>
+                <h1><strong>I'm Michiel Vanzeir</strong></h1>
+                <h4><b>Software developer</b></h4>
+            </div>
+        </div>
+        <div class="about-me fs-5" id="AboutMe">
+            <h2><b>About me</b></h2>
+            <p>Hey there! I'm Michiel, a junior software enthusiast with a curiosity for crafting technology solutions.
+                Currently exploring the world of civil engineering, I thrive on learning new technologies and solving
+                puzzles through coding. My portfolio is a playground where I showcase my projects, each one a journey of
+                discovery and growth. I'm passionate about leveraging technology to tackle pressing global challenges
+                like biodiversity conservation and sustainability. Let's build something awesome together!</p>
+        </div>
+        <div class="portfolio wrapper" id="Portfolio">
+            <div class="section-title">
+                <h1><b>Programming Portfolio</b></h1>
+                <hr>
+            </div>
+            <div id="projectsControls" class="carousel slide" data-bs-touch="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-7 portfolio-img">
+                                <img src="images/wall-e.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div
+                                class="col-xl-7 col-lg-5 portfolio-explanation d-flex flex-column justify-content-center">
+                                <h2><strong>WALL-E</strong></h2>
+                                <p><b>
+                                        Working on this project, I've been diving into ROS (Robot Operating System) and
+                                        ROS2, learning about PID
+                                        and
+                                        Fuzzy Logic controllers for managing how the robot moves, and getting hands-on
+                                        with Gazebo simulations.
+                                        WALL-E can follow a black line using its videofeed and a PID controller. You can
+                                        also
+                                        control it manually with a keyboard. Next up, I'm working on making it even
+                                        smarter with SLAM, which helps
+                                        it
+                                        map out where it is using a Kalman filter to localize itself.
+                                    </b></p>
+                                <h3><strong>Languages used</strong></h3>
+                                <div>
+                                    <p class="language python">Python</p>
+                                    <p class="language cpp">C++</p>
+                                </div>
+                                <div>
+                                    <img class="link-arrow" src="images/arrow-link.png" alt="" />
+                                    <a class="project-link"
+                                        href="https://github.com/Michiel-Vanzeir/Linefollower-rpi">Github Repository</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-7 portfolio-img">
+                                <img src="images/coconnect.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div
+                                class="col-xl-7 col-lg-5 portfolio-explanation d-flex flex-column justify-content-center">
+                                <h2><strong>Coconnect</strong></h2>
+                                <p><b>
+                                        Coconnect is a website I created for my mother, a psychologist. It's one of the
+                                        first websites I've ever built, using HTML, CSS, and incorporating the Bootstrap
+                                        5 framework. While the site is a beginner's effort, it has been a valuable
+                                        learning experience in web development and working with a real-world client.
+                                        I've gained practical skills in implementing responsive design principles and
+                                        effectively showcasing my mother's expertise and services online.
+                                    </b></p>
+                                <h3><strong>Languages used</strong></h3>
+                                <div>
+                                    <p class="language html">HTML</p>
+                                    <p class="language css">CSS</p>
+                                </div>
+                                <div>
+                                    <img class="link-arrow" src="images/arrow-link.png" alt="" />
+                                    <a class="project-link" href="https://www.coconnect.be/">Website link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="btn" type="button" data-bs-target="#projectsControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="btn" type="button" data-bs-target="#projectsControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="section-title">
+                <h1><b>A look into my life</b></h1>
+                <hr>
+            </div>
+            <div class="row my-life">
+                <div class="col-lg-6 my-life-content">
+                    <img src="images/schoolhouse.jpg" class="life-img" alt="">
+                    <h2><b>Schoolhouse.world</b></h2>
+                    <p class="life-text">As a dedicated tutor on schoolhouse.world for a few months in 2021, I have
+                        accumulated 12 hours of tutoring across 10 sessions, impacting learners from 11 different
+                        countries. With a focus on Enrichment, Algebra 2, and Computer Science, I've received 35
+                        positive ratings and 16 acknowledgments for being super helpful. In addition to my online
+                        tutoring, I'm currently assisting high school students in mathematics and Latin, helping them
+                        prepare for tests and exams with effective and engaging personal lessons.
+                    </p>
+                </div>
+                <div class="col-lg-6 my-life-content">
+                    <img src="images/rbac.jpg" class="life-img" alt="">
+                    <h2><b>Royal Belgian Air Cadets</b></h2>
+                    <p class="life-text">Starting in 2023, I embarked on a rigorous journey with the Royal Belgian Air
+                        Cadets, passing
+                        multiple evaluations including math, Dutch, a PT, and a medical exam. This led to a two-week
+                        theoretical camp, which also served as a bootcamp experience. After successfully passing the
+                        exam, I completed over 35 flights in Bertrix, including 8 solo flights. I earned my C badge
+                        certificate, signifying that I had been in the air solo for over one hour. The thrill of solo
+                        flight and the sense of freedom it provides is something I truly cherish.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="contact wrapper" id="Contact">
+            <div class="section-title">
+                <h1><b>Want to reach out?</b></h1>
+                <hr>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-4 contact-info">
+                    <h2><b>E-Mail</b></h2>
+                    <a href="#" class="cryptedmail" data-name="michiel.vanzeir" data-domain="gmail" data-tld="com"
+                        onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a>
+                </div>
+                <div class="col-lg-4 contact-info">
+                    <h2><b>Phone</b></h2>
+                    <span class="protectedNumber" title="+32 485 72 39 04"></span>
+                </div>
+                <div class="col-lg-4 contact-info">
+                    <h2><b>Socials</b></h2>
+                    <a href="https://www.linkedin.com/in/michiel-vanzeir/"><i
+                            class="fab fa-linkedin-in fa-lg icon"></i></a>
+                    <a href="https://github.com/Michiel-Vanzeir"><i class="fab fa-github fa-lg icon"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid footer">
+            <h6>Copyright © 2024 Michiel Vanzeir</h6>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

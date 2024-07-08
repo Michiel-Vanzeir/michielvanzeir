@@ -1,0 +1,226 @@
+@font-face {
+    font-family: "Manrope";
+    src: url("Manrope-Medium.ttf") format("truetype"),
+        url("Manrope-Medium.woff") format("woff");
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("Manrope-Bold.ttf") format("truetype"),
+        url("Manrope-Bold.woff") format("woff");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("Manrope-SemiBold.ttf") format("truetype"),
+        url("Manrope-SemiBold.woff") format("woff");
+    font-weight: 600;
+}
+
+body {
+    background-color: #1D1E2A;
+}
+
+.wrapper {
+    width: 85%;
+    margin: 0 4% 0% 8%;
+}
+
+.container-fluid {
+    --bs-gutter-x: 0;
+}
+
+.navbar {
+    --bs-navbar-brand-hover-color: white;
+    --bs-navbar-brand-color: white;
+    --bs-navbar-hover-color: white;
+    --bs-navbar-color: white;
+    --bs-navbar-toggler-border-color: white;
+    --bs-navbar-brand-font-size: 2rem;
+    font-family: "Ubuntu", sans-serif;
+    margin-top: 1%;
+}
+
+.navbar-nav a {
+    --bs-nav-link-font-size: 1.5rem;
+    --bs-nav-link-padding-y: 0.15rem;
+    margin: auto 1rem;
+}
+
+.navbar-brand {
+    font-family: "Satisfy", sans-serif;
+    padding: 0.75rem 1rem;
+    margin-left: 0;
+}
+
+@media (min-width: 992px) {
+    #contact-btn {
+        border-radius: 25px;
+        padding: var(--bs-nav-link-padding-y) 1.50rem;
+        background-color: #ff8800;
+    }
+}
+
+main {
+    font-family: "Manrope";
+    color: white;
+}
+
+.hero {
+    height: 50vh;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.about-me {
+    padding: 2.5rem 8%;
+    background-color: #323647;
+}
+
+.about-me p {
+    text-align: justify;
+}
+
+.portfolio {
+    padding: 3rem 0; 
+}
+
+.section-title, .section-title h1 {
+    display: inline-block;
+    margin: 0;
+}
+
+hr {
+    border: 3px solid #FF9100;
+    opacity: 100;
+    border-radius: 30px;
+}
+
+.section-title hr {
+    width: 90%;
+    margin: .25rem 0 0 4rem;
+}
+
+.carousel-inner {
+    padding: 2rem 0;
+}
+
+.portfolio-explanation {
+    border-left: 2px solid white;
+    padding: 0 2rem;
+    text-align: justify;
+}
+
+.portfolio-explanation h2, .portfolio-explanation h3 {
+    margin-bottom: .7rem;
+}
+
+.portfolio-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+@media (max-width: 992px) {
+    .portfolio-img {
+        padding: 0rem 2rem 1.5rem 2rem; 
+    }
+}
+
+.language {
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
+    color: #1D1E2A;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.python {
+    background-color: #ffc054;
+}
+
+.cpp {
+    background-color: #96a7fd;
+}
+
+.html {
+    background-color: rgb(252, 167, 136);
+}
+
+.css {
+    background-color: rgb(154, 216, 255);
+}
+
+.link-arrow {
+    width: 20px;
+    height: auto;
+}
+
+.project-link {
+    color: white;
+    margin-left: .7rem;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    align-items: middle;
+}
+
+.my-life {
+    padding-top: 2rem;
+}
+
+.life-img {
+    width: 100%;
+    padding:0 2rem 1.5rem 0;
+}
+
+.life-text {
+    margin-right: 2rem;
+    text-align: justify;
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+}
+
+.cryptedmail:after {
+    content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
+    text-decoration: none;
+    color: #fff;
+}
+
+span.protectedNumber:before {
+    content: attr(title);
+}
+
+.contact-info {
+    padding: 2rem 2rem 0 2rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.icon {
+    color: white;
+    margin: 0 .5rem;
+}
+
+.my-life-content {
+    padding: 0 2rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
